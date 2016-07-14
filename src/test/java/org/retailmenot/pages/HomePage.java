@@ -5,8 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.retailmenot.util.AppLibrary;
 
 public class HomePage {
-	
 	WebDriver driver;
+	
+	//Adding Constructor
+	HomePage(WebDriver driver)
+	{
+		this.driver =driver;
+	}
+	
+ 
 	
 	//Performing a activity goes to next page
 	public ProductDealsPage browseProductDeals()
